@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Fallout Shelter Wasteland Card</title>
-  <script type="module" src="app.js"></script>
-</head>
-<body>
-  <h1>hi</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css" integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fallout Shelter Wasteland Card</title>
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Wasteland card</li>
+          <li>Trivia</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Hey there, welcome to the wasteland!</h1>
+        <p> Its a harsh placee filled with gigantic creepy crawlies and feral violent people. You will find a good guy here and now...if you play nice. We got a few dwellers out there with a lot of loot! One guy wasn't so lucky, but you can revive him if you want!</p>
+      </article>
+      <section id="wasteland">
+        <h2>The card below shows the stats of the dwellers you sent out</h2>
+        <div class="wasteland-card-container">
+          <div class="explorer-card">
+            <div>
+              <span>image</span>
+              <div>
+                <span>name and health</span>
+                <span>level</span>
+              </div>
+              <div>
+                <div>dialogue</div>
+                <div>
+                  <div>
+                    <span>Stimpaks</span>
+                    <span>radaway</span>
+                    <span>caps</span>
+                  </div>
+                  <div>
+                    <button>Advance</button>
+                    <button>Recall</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            <ul>
+              <li>loot</li>
+            </ul>
+            <span>arrow-right</span>
+            </div>
+          </div>
+          <button type="button" title="Previous dweller" class="prev-dweller">
+            <i class="fa-regular fa-circle-left" role="img"></i>
+          </button>
+          <button type="button" title="Next dweller" class="next-dweller">
+            <i class="fa-regular fa-circle-right" role="img"></i>
+          </button>
+          <span>
+            3/2
+          </span>
+          <p>Exploring Wasteland 2d 14hr 5min</p>
+          <button type="button">Close</button>
+        </div>
+      </section>
+    </main>
+    <footer>Made by <a href="htps://www.tracymuso.com">Tracy</a></footer>
+  </body>
 </html>
