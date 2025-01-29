@@ -1,35 +1,214 @@
 body {
-  background-color: aliceblue;
+  background-color: white;
   padding: 0;
   margin: 0;
 }
 
-#wasteland {
+header {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.568);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #34b102;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu {
+  display: inline-flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.nav-menu li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.navlink:hover{
+  color: rgb(80, 77, 77);
+}
+
+.navlink:active{
+  color: #34b102;
+}
+
+.navlink:focus {
+  outline: 1px solid #000;
+  outline-offset: 2px;
+  border-radius: 7px;
+}
+
+#about {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+
+#about article {
+  width: 55%;
+}
+
+/* .hero-img-container {
+  width: 400px;
+  height: 600px;
+}
+*/
+
+.hero-img {
+  width: 400px;
+  height: 400px;
+} 
+
+.about-greeting {
+  color: rgb(71, 69, 69);
+  margin: 0;
+}
+
+#about-heading {
+  font-size: 44px;
+  font-weight: 700;
+  color: rgb(2, 90, 2);
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.wasteland-intro {
+  line-height: 2rem;
+  color: rgb(80, 77, 77);
+}
+
+#wasteland {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  width: 95%;
-  margin: auto;
-  padding: 5rem 1rem;
+  gap: 1rem;
+  width: 100%;
+  padding: 3rem 0;
 }
 
 .wasteland-card-container {
-  display: block;
+  background-color: rgba(0, 0, 0, 0.733);
   position: relative;
-  width: 90%;
-  padding: 2rem;
+  border-radius: 8px;
+  width: 1000px;
+  padding: 50px;
   margin: 0;
 }
 
 .explorer-card {
   display: block;
-  padding: 1rem;
+  padding: 50px;
   position: relative;
-  width: 95%;
-  border: solid 3px rgb(52, 177, 2);
+  width: 900px;
+  border: solid 2px #34b102;
+  box-shadow: #0133017c 3px;
   border-radius: 7px;
   z-index: 1;
   background-color: #0133017c;
+}
+
+.wasteland-card-container h5 {
+  position: absolute;
+  top: 0.25rem;
+  line-height: 3rem;
+  left: 35%;
+  font-size: 18px;
+  line-height: 2;
+  color: #4bec0b;
+  z-index: 3;
+}
+
+.text-bg {
+  width: 353px;
+  height: 5px;
+  z-index: 2;
+  position: absolute;
+  top: 49px;
+  left: 35%;
+  background-color: rgba(4, 65, 9, 0.87);
+}
+
+.text-bg-2 {
+  width: 28px;
+  height: 5px;
+  z-index: 2;
+  position: absolute;
+  top: 49px;
+  left: 10%;
+  background-color: rgba(4, 65, 9, 0.87);
+}
+
+.arrow {
+  color: #34b102;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.prev-card {
+  position: absolute;
+  top: 2.2rem;
+  left: 2.5rem;
+  z-index: 3;
+}
+
+.next-card {
+  position: absolute;
+  top: 2.2rem;
+  right: 2.5rem;
+  z-index: 3;
+}
+
+.card-nav-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(34, 53, 35);
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  border: solid 2px #34b102;
+}
+
+.dweller-number {
+  position: absolute;
+  z-index: 3;
+  top: 2.5rem;
+  left: 10%;
+  color: #4bec0b;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.close-card {
+  background-color: #34b102;
+  position: absolute;
+  bottom: 2rem;
+  right: 5rem;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 7px;
+  padding: 3px;
+  z-index: 3;
+}
+
+.close-card span {
+  border: 1px solid rgb(1, 58, 1);
+  border-radius: 7px;
+  padding: 3px 7px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #0c2503;
 }

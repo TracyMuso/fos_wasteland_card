@@ -3,32 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.tenor.com https://tenor.com;">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css" integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Fallout Shelter Wasteland Card</title>
     <script type="module" src="app.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Wasteland card</li>
-          <li>Trivia</li>
-          <li>About</li>
+      <h3>FOS FUN</h3>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" role="menubar">
+          <li role="menuitem"><a class="navlink" href="#about">About</a></li>
+          <li role="menuitem"><a class="navlink" href="#explorer-card">Explorer card</a></li>
+          <li role="menuitem"><a class="navlink" href="#trivia">Trivia</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <article>
-        <h1>Hey there, welcome to the wasteland!</h1>
-        <p> Its a harsh placee filled with gigantic creepy crawlies and feral violent people. You will find a good guy here and now...if you play nice. We got a few dwellers out there with a lot of loot! One guy wasn't so lucky, but you can revive him if you want!</p>
-      </article>
+      <section id="about" class="hero" aria-labelledby="about-heading">
+        <article>
+          <h4 class="about-greeting">Hey there,</h4>
+          <h1 id="about-heading"> Welcome to the wasteland!</h1>
+          <p class="wasteland-intro">
+            It's a harsh place filled with gigantic creepy crawlies, feral ghouls and raiders. 
+            You will find a good guy here and now... if you play nice. We've got a few dwellers 
+            out there with a lot of loot! One guy wasn't so lucky, but you can revive him if you want!
+          </p>
+        </article>
+        <div class="hero-img-container">
+          <img src="assets/fos_vault_dweller_with_pet.webp" class="hero-img" alt="fallout-shelter-game-picture" />
+        </div>
+      </section>
       <section id="wasteland">
         <h2>The card below shows the stats of the dwellers you sent out</h2>
         <div class="wasteland-card-container">
           <div class="explorer-card">
             <div>
               <span>image</span>
+              <span>url of gif https://tenor.com/view/garden-of-eden-gif-8145369096897489620</span>
               <div>
                 <span>name and health</span>
                 <span>level</span>
@@ -49,23 +65,33 @@
               </div>
             </div>
             <div>
-            <ul>
-              <li>loot</li>
-            </ul>
-            <span>arrow-right</span>
+              <ul>
+                <li>loot</li>
+              </ul>
+              <span>arrow-right</span>
             </div>
           </div>
-          <button type="button" title="Previous dweller" class="prev-dweller">
-            <i class="fa-regular fa-circle-left" role="img"></i>
+          <button type="button" title="Previous dweller" class="card-nav-btn prev-card">
+            <i class="fa-solid fa-chevron-left arrow" role="img" aria-hidden="true"></i>
           </button>
-          <button type="button" title="Next dweller" class="next-dweller">
-            <i class="fa-regular fa-circle-right" role="img"></i>
+          <button type="button" title="Next dweller" class="card-nav-btn next-card">
+            <i class="fa-solid fa-chevron-right arrow" role="img" aria-hidden="true"></i>
           </button>
-          <span>
-            3/2
+          <span class="dweller-number">
+            2/3
           </span>
-          <p>Exploring Wasteland 2d 14hr 5min</p>
-          <button type="button">Close</button>
+          <span class="text-bg"></span>
+          <span class="text-bg-2"></span>
+          <h5>Exploring Wasteland 2d 14hr 5min</h5>
+          <button class="close-card" type="button" title="Close Card">
+            <span>Close</span>
+          </button>
+        </div>
+      </section>
+      <section id="trivia">
+        <h2 class="">Here is some Fallout shelter trivia. Feel free to test your knowledge and learn something new!</h2>
+        <div>
+          3-5 simple questions
         </div>
       </section>
     </main>
